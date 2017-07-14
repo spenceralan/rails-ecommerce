@@ -8,8 +8,9 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <%= render "layouts/navbar" %>
-
+  <div id="navbarDisplay">
+    <%= render "layouts/navbar" %>
+  </div>
   <body>
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
