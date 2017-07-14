@@ -5,7 +5,12 @@
   <div class="section">
     <% @products.each do |product| %>
       <div class="col s4">
-        <h4 class="product-name"><%= product.name %></h4>
+        
+        <div class="product-name">
+          <h4>
+            <span class="product-name-text"><%= product.name %></span>
+          </h4>
+        </div>
 
         <div class="product-description">
           <p><%= product.description %></p>
