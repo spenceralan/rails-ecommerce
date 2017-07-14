@@ -8,12 +8,13 @@
         
         <div class="product-name">
           <h4>
-            <span class="product-name-text"><%= product.name %></span>
+            <span class="product-name-text">
+              <%= link_to product.name, product_path(product), remote: true %>
+            </span>
           </h4>
         </div>
 
-        <div class="product-description">
-          <p><%= product.description %></p>
+        <div class="product-description" id="<%= product.id %>">
         </div>
 
         <p><%= number_to_currency product.price %></p>
