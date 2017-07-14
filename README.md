@@ -10,7 +10,9 @@ To set up:
 
 
 Refactor List:
-Add ruby version
-Update gems for development environment
-Validate order item quantity for whole positive numbers
-Add items to cart asynchronously 
+* Add ruby version
+* Update gems for development environment
+* Validate order item quantity for whole positive numbers
+* Add items to cart asynchronously
+* Remove items from cart asychronously
+* Update cart total asychronously
