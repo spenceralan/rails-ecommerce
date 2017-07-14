@@ -13,3 +13,4 @@ Refactor List:
 * Add items to cart asynchronously
 * Remove items from cart asychronously
 * Update cart total asychronously
+* Hide and show product description on click
