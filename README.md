@@ -7,3 +7,8 @@ To set up:
 * `rake db:setup`
 
 * Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
+
+
+Refactor List:
+Add ruby version
+Update gems for development environment
