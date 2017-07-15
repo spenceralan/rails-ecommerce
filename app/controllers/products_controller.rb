@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
-  before_filter :authorize, except: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show]
+
+  before_action except: [:index, :show] do
+    redirect_to new_user_session_path unless current_user.try(:admin)
+  end
 
   def index
     @products = Product.all

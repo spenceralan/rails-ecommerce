@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:show]
 
   def show
     @previous_orders = current_user.previous_orders if current_user

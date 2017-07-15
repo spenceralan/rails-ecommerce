@@ -4,11 +4,11 @@
       <li><%= link_to "Cart | Total items: #{ cart_items }", cart_path %></li>
       <li><%= link_to "See all products", products_path %></li>
       <% if current_user %>
-        <li><%= current_user.email %></li>
-        <li><%= link_to "Sign out", '/sign_out' %></li>
+        <li><%= link_to current_user.email, edit_user_registration_path %></li>
+        <li><%= link_to "Sign out", destroy_user_session_path, method: 'delete' %></li>
       <% else %>
-        <li><%= link_to "Sign up", 'sign_up' %></li>
-        <li><%= link_to "Sign in", '/sign_in' %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+        <li><%= link_to "Sign in", new_user_session_path %></li>
       <% end %>
     </ul>
   </div>
