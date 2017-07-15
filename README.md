@@ -15,3 +15,4 @@ Refactor List:
 * Update cart total asychronously
 * Hide and show product description on click
 * Show product description with asynchornous requests
+* Integrate devise and flash messages for signing in and out
