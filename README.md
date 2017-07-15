@@ -16,3 +16,5 @@ Refactor List:
 * Hide and show product description on click
 * Show product description with asynchornous requests
 * Integrate devise and flash messages for signing in and out
+* Admin can add new products
+* New products can have decimal amounts
