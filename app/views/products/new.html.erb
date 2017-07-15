@@ -1,9 +1,11 @@
-<h1>Add a product.</h1>
+<h1>Add a Product</h1>
 
   <%= form_for @product do |f| %>
     Name: <%= f.text_field :name %>
     Description: <%= f.text_field :description %>
-    Password: <%= f.number_field :price %>
-  <%= f.submit "Submit" %>
+    Price: <%= f.text_field :price %>
+  <span class="waves-effect waves-light btn">
+    <%= f.submit "Submit" %>
+  </span>
 
 <% end %>

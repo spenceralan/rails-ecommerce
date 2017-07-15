@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   before_action except: [:index, :show] do
-    redirect_to new_user_session_path unless current_user.try(:admin)
+    redirect_to new_user_session_path unless admin
   end
 
   def index
@@ -17,7 +17,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to '/'
+      redirect_to root_path
     else
       render :new
     end
