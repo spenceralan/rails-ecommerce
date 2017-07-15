@@ -18,3 +18,5 @@ Refactor List:
 * Integrate devise and flash messages for signing in and out
 * Admin can add new products
 * New products can have decimal amounts
+* Admin can update and delete products
+* Flash messages integrated for adding, updating, and deleting products
