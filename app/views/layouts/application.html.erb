@@ -12,9 +12,22 @@
     <%= render "layouts/navbar" %>
   </div>
   <body>
+    <% if notice %>
+      <div class="container notices">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% end %>
+
+    <% if alert %>
+      <div class="container notices">
+        <p class="alert"><%= alert %></p>
+      </div>
+    <% end %>
+
     <% flash.each do |name, msg| %>
       <%= content_tag :div, msg, id: "flash_#{name}" %>
     <% end %>
+
     <div class="container">
       <%= yield %>
     </div>
