@@ -5,7 +5,7 @@ class Product < ApplicationRecord
 
   validates :price,
     presence: true,
-    numericality: true,
-    greater_than: 0
-
+    numericality: {
+      greater_than: 0
+    }
 end
