@@ -1,3 +1,4 @@
 var deletedItemID = "<%= j "##{params.fetch(:id)}" %>";
 $(deletedItemID).remove();
+$("#navbarDisplay").html("<%= j render 'layouts/navbar' %>")
 $("#cart-total").html("<%= j render "carts/cart_total" %>")
