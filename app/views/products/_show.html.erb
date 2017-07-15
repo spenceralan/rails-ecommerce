@@ -1,1 +1,7 @@
 <p><%= @product.description %></p>
+
+<% if admin %>
+  <span class="waves-effect waves-light btn">
+    <%= link_to "Update Product", edit_product_path %>
+  </span>
+<% end %>

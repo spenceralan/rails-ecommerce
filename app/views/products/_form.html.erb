@@ -1,0 +1,10 @@
+<%= render "layouts/errors", :object => @product %>
+
+<%= form_for @product do |f| %>
+  Name: <%= f.text_field :name %>
+  Description: <%= f.text_field :description %>
+  Price: <%= f.text_field :price %>
+  <span class="waves-effect waves-light btn">
+    <%= f.submit "Submit" %>
+  </span>
+<% end %>

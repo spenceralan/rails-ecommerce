@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   end
 
   def index
-    @products = Product.all
+    @products = Product.all.sort
     @order_item = current_order.order_items.new
   end
 
@@ -17,6 +17,7 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
+      flash[:notice] = "Product Saved Sucessfully"
       redirect_to root_path
     else
       render :new
@@ -30,6 +31,27 @@ class ProductsController < ApplicationController
       format.js
     end
   end
+
+  def edit
+    @product = Product.find(params[:id])
+  end
+
+  def update
+    @product = Product.find(params[:id])
+    if @product.update(product_params)
+      flash[:notice] = "Product Sucessfully Updated"
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    Product.find(params.fetch(:id)).destroy
+    flash[:notice] = "Product Sucessfully Deleted"
+    redirect_to root_path
+  end
+
 
   private
   def product_params

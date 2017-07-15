@@ -1,0 +1,9 @@
+<h1>Update a Product</h1>
+
+<%= render "form" %>
+
+<br>
+
+<span class="waves-effect waves-light btn">
+  <%= link_to "Delete", product_path(@product), data: { confirm: "Are you sure?" }, method: :delete %>
+</span>
