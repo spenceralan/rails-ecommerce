@@ -20,3 +20,4 @@ Refactor List:
 * New products can have decimal amounts
 * Admin can update and delete products
 * Flash messages integrated for adding, updating, and deleting products
+* Add validations to models
