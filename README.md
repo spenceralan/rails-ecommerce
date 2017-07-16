@@ -1,10 +1,6 @@
 # Rails Ecommerce Store
 
-This app is unlikely to save the world. But it will help you keep track of every review you have ever left on a product (that is in this store)!
-
-With user authentication and authorization, users can easily navigate between products and add reviews that are instantly tied to their accounts! If a user has a special admin account, they have the power to add new products and even delete user reviews!
-
-Users will even have the option of viewing all the reviews they have left on one convenient page. Check it out in the 'Edit Account' section!
+This ecommerce website was in shambles before I got to it! Bugs galore! I cleaned up the site security by adding and integrating devise. I removed bugs that would potentially allow users to buy negative items! What does that even mean?! If this project doesn't save the world it will save a clients day!
 
 ### Prerequisites
 
