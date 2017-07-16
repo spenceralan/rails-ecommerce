@@ -10,6 +10,9 @@
 * Ignore paperclip attachments
 public/system/*
 
+* Ignore SimpleCov generated files
+coverage/*
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
