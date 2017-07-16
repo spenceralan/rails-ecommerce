@@ -21,3 +21,6 @@ Refactor List:
 * Admin can update and delete products
 * Flash messages integrated for adding, updating, and deleting products
 * Add validations to models
+* Add images to products
+* Display images with products
+* Admin can add / update product images
